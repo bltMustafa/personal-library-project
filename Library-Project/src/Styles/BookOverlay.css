@@ -1,0 +1,59 @@
+.overlay {
+  min-height: 50vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(76, 103, 147, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.overlay-inner {
+  background: white;
+  width: 700px;
+  height: 550px;
+  padding: 1.5rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.overlay-inner .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+  color: red;
+}
+.overlay-inner .inner-box {
+  display: flex;
+  justify-content: center;
+}
+.overlay-inner .inner-box img {
+  margin-right: 15px;
+  width: 150px;
+  height: 200px;
+  margin-left: 5px;
+}
+
+.info h2 {
+  color: red;
+}
+
+.info h3 {
+  color: chocolate;
+}
+
+.overlay-inner .description {
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 13px;
+}

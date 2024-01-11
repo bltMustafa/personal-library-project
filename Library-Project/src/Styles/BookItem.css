@@ -1,0 +1,51 @@
+.book-card {
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(212, 185, 150, 0.5);
+  transition: 0.5s;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+
+.book-card:hover {
+  transform: scale(0.9);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.book-card img {
+  width: 70%;
+  height: 200px;
+}
+
+h5 {
+  margin: 10px;
+}
+
+h6 {
+  margin: 10px;
+}
+
+h6 span {
+  color: red;
+}
+
+.favorite-button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.remove-button {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  margin: 10px 80px;
+}
