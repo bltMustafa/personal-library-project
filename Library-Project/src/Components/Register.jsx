@@ -36,10 +36,13 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:2080/api/v1/users", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "http://localhost:2080/api/v1/users/signup",
+        {
+          username,
+          password,
+        }
+      );
       alert(
         `Başarılı bir şekilde üye oldunuz. Merhaba ${response.data.data.username} `
       );

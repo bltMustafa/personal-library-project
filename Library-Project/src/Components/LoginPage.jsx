@@ -23,14 +23,11 @@ function LoginPage({ onLogin }) {
     setShowPassword(!showPassword);
   };
 
-  // ? useEffect hook'u, component ilk kez yüklendiğinde çalışır. Bu durumda, axios kullanarak belirtilen API'den kullanıcı verilerini çekiyor ve bu verileri setUsers fonksiyonu aracılığıyla users state'ine yerleştiriliyor.
-
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get("http://localhost:2080/api/v1/users");
         setUsers(response.data.users);
-        console.log(response.data.users);
       } catch (err) {
         console.error("Kullanıcıları alırken bir hata oluştu", err);
       }
@@ -41,18 +38,34 @@ function LoginPage({ onLogin }) {
 
   // ? Bu fonksiyon, giriş yap butonuna tıklandığında çalışır. users dizisi içinde kullanıcının girdiği kullanıcı adı (username) ve şifre (password) ile eşleşen bir kullanıcı varsa, kullanıcıya başarı mesajı gösterir; aksi takdirde, hata mesajı gösterir.
 
-  const handleSignIn = () => {
-    const userMatch = users.find(
-      (user) => user.username === username && user.password === password
-    );
+  const handleSignIn = async (e) => {
+    try {
+      e.preventDefault();
+      const response = await axios.post(
+        "http://localhost:2080/api/v1/users/login",
+        {
+          username: username,
+          password: password,
+        }
+      );
 
-    if (userMatch) {
-      alert(`Başarıyla giriş yaptınız. Merhaba ${username}`);
-      onLogin(userMatch);
-    } else {
-      alert("Kullanıcı adı veya şifre hatalı");
+      if (response.data === "OK") {
+        const userMatch = users.find((user) => user.username === username);
+
+        if (userMatch) {
+          alert(`Başarıyla giriş yaptınız. Merhaba ${username}`);
+          onLogin(userMatch);
+          navigate("/home");
+        } else {
+          alert("Kullanıcı adı veya şifre hatalı");
+        }
+      } else {
+        alert("Giriş yapılamadı. Kullanıcı adı veya şifre hatalı");
+      }
+    } catch (err) {
+      console.error("Giriş yapılırken bir hata oluştu", err);
+      alert("Giriş yapılırken bir hata oluştu");
     }
-    navigate("/home");
   };
 
   return (

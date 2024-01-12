@@ -8,7 +8,6 @@ import "../Styles/BookItem.css";
 
 function BookItem({ book, isFavorite, currentUser }) {
   // ? Kitabın favorilere eklenip eklenmediği kontrol eden state.
-
   const [isBookmarked, setIsBookmarked] = useState(isFavorite);
 
   // ? handleFavoriteClick fonksiyonu favori butonuna tıklandığında tetiklenir.Bu fonksiyon, olayın yayılmasını durdurur.Favori butonunun ikonu, 'isBookmarked' state'ine bağlı olarak değişir. Eğer kitap favorilere eklenmişse, 'BookmarkAdd' ikonu görünür aksi takdirde, 'BookmarkBorderIcon' ikonu görünür
@@ -16,14 +15,12 @@ function BookItem({ book, isFavorite, currentUser }) {
   const handleFavoriteClick = async (event) => {
     try {
       const userID = currentUser.id;
-      console.log(userID);
-
       event.stopPropagation();
 
       if (typeof book !== "string" && book.volumeInfo) {
         const title = book.volumeInfo.title;
         const thumbnail = book.volumeInfo.imageLinks?.thumbnail;
- 
+
         if (title && thumbnail) {
           const favoriteBook = {
             title,

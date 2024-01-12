@@ -12,7 +12,9 @@ router.get("/:userID/books/:bookID", userController.getOneBook);
 
 router.post("/:userID/books", userController.createNewBook);
 
-router.post("/", userController.createNewUser);
+router.post("/signup", userController.createNewUser);
+
+router.post("/login", userController.loginUser);
 
 router.delete("/:userID/books/:bookID", userController.deleteOneBook);
 

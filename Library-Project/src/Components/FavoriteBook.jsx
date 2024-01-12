@@ -30,7 +30,6 @@ function FavoriteBook({ currentUser }) {
 
       if (response.status === 200) {
         setFavoriteBooks(response.data.data.favoriteBooks);
-        console.log(response.data.data.favoriteBooks);
         setLoading(false);
       } else {
         console.error("Favori kitaplar alınırken bir hata oluştu");

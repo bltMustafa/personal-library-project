@@ -5,6 +5,7 @@ import BookItem from "./BookItem";
 import BookOverlay from "./BookOverlay";
 
 function BookShow({ books, currentUser }) {
+
   // ! show overlay'in görünüp görünmediğini tutar ('true' iken görünür , 'false' ise gizli)
   const [show, setShow] = useState(false);
   // ! 'selectedBook' anlık seçilen kitap bilgisini tutar.

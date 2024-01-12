@@ -24,34 +24,16 @@
           "createdAt": "11.01.2024 15:35:12"
         },
         {
-          "id": "7cea0891-3d35-4189-9c0c-8d4b67beb5a5",
-          "title": "DK Eyewitness Travel Guide Budapest",
-          "thumbnail": "http://books.google.com/books/content?id=oODLDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-          "createdAt": "11.01.2024 15:35:13"
-        },
-        {
           "id": "9dd4f538-ea9d-4b7e-93cb-aa1f926f7671",
           "title": "React Tamamen Uygulamalı ve Güncel",
           "thumbnail": "http://books.google.com/books/content?id=TnMnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
           "createdAt": "11.01.2024 15:44:11"
         },
         {
-          "id": "bd4941f2-724a-449c-a9a0-2ff648cc78b9",
-          "title": "ReactJS by Example - Building Modern Web Applications with React",
-          "thumbnail": "http://books.google.com/books/content?id=Ht3JDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-          "createdAt": "11.01.2024 15:44:17"
-        },
-        {
           "id": "eb048cf7-8ebc-4c6a-8be7-c8080feaa809",
           "title": "Derinlemesine React Data",
           "thumbnail": "http://books.google.com/books/content?id=7Rx6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
           "createdAt": "11.01.2024 15:44:20"
-        },
-        {
-          "id": "ed1781d5-fc38-4677-94f8-69e9364b212e",
-          "title": "Derinlemesine React",
-          "thumbnail": "http://books.google.com/books/content?id=4Rx6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-          "createdAt": "11.01.2024 15:44:45"
         }
       ]
     },
@@ -77,6 +59,30 @@
           "title": "The Outliers",
           "thumbnail": "http://books.google.com/books/content?id=oRRhCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
           "createdAt": "11.01.2024 15:56:12"
+        },
+        {
+          "id": "6adc040c-fb16-4051-9d75-d4c0f3edf00b",
+          "title": "Advertising to Children in China",
+          "thumbnail": "http://books.google.com/books/content?id=vYOofF63aBoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "11.01.2024 23:29:14"
+        },
+        {
+          "id": "dac8bf31-e6ef-4b99-b386-50f33d6f99ec",
+          "title": "DK Eyewitness Travel Guide",
+          "thumbnail": "http://books.google.com/books/content?id=F12LjOgaFpcC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "createdAt": "11.01.2024 23:29:16"
+        },
+        {
+          "id": "10a1481c-5871-474c-a68f-948e068715cf",
+          "title": "Children's Literature",
+          "thumbnail": "http://books.google.com/books/content?id=ykQNAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "createdAt": "11.01.2024 23:30:23"
+        },
+        {
+          "id": "bd3bb95b-d790-403f-9a6d-f1cdfce32322",
+          "title": "Derinlemesine React",
+          "thumbnail": "http://books.google.com/books/content?id=4Rx6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "11.01.2024 23:30:31"
         }
       ]
     },
@@ -102,6 +108,111 @@
           "title": "Outlier Detection for Temporal Data",
           "thumbnail": "http://books.google.com/books/content?id=aPNfAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
           "createdAt": "11.01.2024 16:25:49"
+        }
+      ]
+    },
+    {
+      "id": "2e3fb390-da7d-4aaa-996c-ed458f7cf162",
+      "username": "samet",
+      "password": "$2b$13$hhokYUcb.lHCqrLgudexAOiZDKTqhoBTOwiS/JfWvttxTFyI6KAzi",
+      "favoriteBooks": [
+        {
+          "id": "fb1e90cb-f034-4843-94c2-92bad99b0ca4",
+          "title": "Advertising to Children in China",
+          "thumbnail": "http://books.google.com/books/content?id=vYOofF63aBoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:06:56"
+        },
+        {
+          "id": "e6022467-c762-48e4-83ed-32f8e78607ac",
+          "title": "Mind Children",
+          "thumbnail": "http://books.google.com/books/content?id=56mb7XuSx3QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:06:58"
+        },
+        {
+          "id": "4ff3e5c8-0fd6-4b1f-a628-a80ea2179b64",
+          "title": "Who's Afraid of Children?",
+          "thumbnail": "http://books.google.com/books/content?id=Vol5FFfRZosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:06:59"
+        },
+        {
+          "id": "5956a753-ef64-4dbd-9fcb-a7c054307ebc",
+          "title": "DK Eyewitness Travel Guide Budapest",
+          "thumbnail": "http://books.google.com/books/content?id=oODLDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:07:54"
+        },
+        {
+          "id": "7bb5b57d-4192-4c2c-b934-53d02516c1ef",
+          "title": "The Rough Guide to Seoul (Travel Guide eBook)",
+          "thumbnail": "http://books.google.com/books/content?id=np6WDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:07:55"
+        },
+        {
+          "id": "c87c23a5-2f29-44e3-b3bb-ac09f1824cd6",
+          "title": "Advertising to Children in China",
+          "thumbnail": "http://books.google.com/books/content?id=vYOofF63aBoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:08:55"
+        },
+        {
+          "id": "8daa8bb9-e387-44e5-9dd7-488ac45ba9a3",
+          "title": "Derinlemesine React",
+          "thumbnail": "http://books.google.com/books/content?id=4Rx6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:17:53"
+        },
+        {
+          "id": "9c3e625b-b6d9-4712-846c-544b9789030f",
+          "title": "Derinlemesine React Data",
+          "thumbnail": "http://books.google.com/books/content?id=7Rx6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:17:55"
+        }
+      ]
+    },
+    {
+      "id": "4501c513-47ea-4792-8256-bfb02c0440a5",
+      "username": "burakk",
+      "password": "$2b$13$RsZ5RnthwgWtZhjM864h3OjO9xhhI5k3iOHZazn9E0ZHt1MHeDMIe",
+      "favoriteBooks": [
+        {
+          "id": "512efe43-23c4-4282-b20e-e8228d714769",
+          "title": "Who's Afraid of Children?",
+          "thumbnail": "http://books.google.com/books/content?id=Vol5FFfRZosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 02:47:00"
+        },
+        {
+          "id": "058f1c8d-ccf1-473a-b2f9-0e2d5a5df5a6",
+          "title": "Children's Literature",
+          "thumbnail": "http://books.google.com/books/content?id=ykQNAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "createdAt": "12.01.2024 02:47:03"
+        }
+      ]
+    },
+    {
+      "id": "e8dc1409-4092-4311-af05-a471e76ada92",
+      "username": "emir",
+      "password": "$2b$13$RaP3iFVTW4xwP3Qg1cuVTe0wmrMB4Le2cbuWu/NJanlNlyiu7VKnS",
+      "favoriteBooks": [
+        {
+          "id": "8f041c28-4d5f-49fc-b6f7-b3a6103f9106",
+          "title": "Sefiller",
+          "thumbnail": "http://books.google.com/books/content?id=8N50EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:20:21"
+        },
+        {
+          "id": "a2e14792-a525-4e7f-b331-54c2c54caa8d",
+          "title": "The Descent of Man, and Selection in Relation to Sex",
+          "thumbnail": "http://books.google.com/books/content?id=bUADAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:20:44"
+        },
+        {
+          "id": "e76f2ba4-8c19-49a8-9430-4c10a4df6bd9",
+          "title": "The Evolution of Sex",
+          "thumbnail": "http://books.google.com/books/content?id=SbI5AAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "createdAt": "12.01.2024 03:20:51"
+        },
+        {
+          "id": "41f1e1bb-d9ac-4b0b-b52d-538c5b094980",
+          "title": "Children's Literature",
+          "thumbnail": "http://books.google.com/books/content?id=ykQNAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+          "createdAt": "12.01.2024 03:21:09"
         }
       ]
     }

@@ -1,4 +1,6 @@
 const userService = require("../services/userService");
+const bcrypt = require("bcrypt");
+const DB = require("../database/db.json");
 
 const getAllUsers = (req, res) => {
   try {
@@ -54,30 +56,44 @@ const getOneBook = (req, res) => {
   }
 };
 
-const createNewUser = (req, res) => {
-  const { body } = req;
-  if (!body.username || !body.password) {
-    res.status(400).send({
-      status: "FAILED",
-      data: {
-        error:
-          "One of the following keys is missing or is empty in request body: 'username', 'password'",
-      },
-    });
-    return;
-  }
-  const newUser = {
-    username: body.username,
-    password: body.password,
-  };
-
+const createNewUser = async (req, res) => {
   try {
+    const { username, password } = req.body;
+    const hash = await bcrypt.hash(password, 13);
+    const newUser = {
+      username: username,
+      password: hash,
+    };
     const createdUser = userService.createNewUser(newUser);
+    console.log(createdUser);
     res.status(201).send({ status: "OK", data: createdUser });
   } catch (error) {
-    res
-      .status(error?.status || 500)
-      .send({ status: "FAILED", data: { error: error?.message || error } });
+    console.error("Error:", error);
+    res.status(500).send({ status: "Error", message: "Internal Server Error" });
+  }
+};
+
+const loginUser = async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const user = DB.users.find((u) => u.username === username);
+    console.log("Sending request with:", { username, password });
+
+    if (!user) {
+      res.status(401).send("No user");
+      return;
+    }
+
+    const isValid = await bcrypt.compare(password, user.password);
+    if (!isValid) {
+      res.status(401).send("Wrong password");
+      return;
+    }
+
+    res.status(200).send("OK");
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).send({ status: "Error", message: "Internal Server Error" });
   }
 };
 
@@ -138,6 +154,7 @@ module.exports = {
   getOneUser,
   getOneBook,
   createNewUser,
+  loginUser,
   createNewBook,
   deleteOneBook,
 };

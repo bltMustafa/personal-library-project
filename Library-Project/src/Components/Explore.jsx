@@ -81,7 +81,7 @@ function Explore({ currentUser }) {
         ))}
       </div>
 
-      <h1 className="title"> Bilgisayar Kitapları </h1>
+      <h1 className="title"> {t("COMPUTER_BOOK")} </h1>
       <div className="card">
         {magazinData.map((book, key) => (
           <BookItem currentUser={currentUser} book={book} key={key} />
